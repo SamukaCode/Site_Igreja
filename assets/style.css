@@ -13,6 +13,42 @@ main {
   font-family: 'Cabin', sans-serif;
 }
 
+.glider img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do slide */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+  border-radius: 10px; /* Opcional: arredonda as bordas */
+}
+
+
+.glider-prev i, 
+.glider-next i {
+    font-size: 24px;
+    color: black;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dots button {
+    width: 30px;
+    height: 5px;
+    background-color: #ccc;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dots .active {
+    background-color: #007bff;
+    width: 40px; /* Aumenta a largura do indicador ativo */
+}
+
+
 .carrossel {
   width: 100%;
 }
@@ -52,6 +88,19 @@ main {
 @media screen and (max-width: 1000px) {
   .link {
     display: none !important;
+  }
+
+  .divCarrossel {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+   .divCarrossel {
+    margin-left: 30px;
+  }
+  .paragrafoQuemSomos {
+    font-size: 20px;
   }
 }
 

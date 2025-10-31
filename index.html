@@ -450,9 +450,12 @@
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       <img src="assets/media/logo-ieq.png" height="80" />
       <div class="mt-3">
-        Igreja do Evangelho Quadrangular do Cervezão - Rio Claro (SP) | 2025 ©
-        Todos os direitos reservados <br />
-        Desenvolvido por Samuel Camargo
+        Igreja do Evangelho Quadrangular do Cervezão - Rio Claro (SP) |
+        <span id="year"></span> © Todos os direitos reservados <br />
+        Desenvolvido por
+        <a href="https://samukacode.github.io/Portfolio/" target="_blank" rel="noreferrer">
+          Samuel Camargo
+        </a>
       </div>
     </div>
   </footer>
@@ -467,6 +470,7 @@
     </div>
   </div>
   <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
     document.querySelector(".accept").onclick = function () {
       document.querySelector(".cookie-card").style.transition =
         "all 1s ease-in-out";
@@ -477,3 +481,4 @@
 </body>
 
 </html>
+

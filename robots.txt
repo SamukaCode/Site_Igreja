@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ieqcervezao.com.br/sitemap.xml
